@@ -1,7 +1,7 @@
 # ANIMIX
 - https://t.me/animix_game_bot?startapp=IZiJZzZXOPcI
 # INSTALLED
-- git clone
+- git clone https://github.com/Boyoke-Encok/animix_v5.git
 - cd animix_v5
 - npm i
 - node animix.js ( no proxy )
