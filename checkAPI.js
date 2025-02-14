@@ -14,7 +14,7 @@ async function checkBaseUrl() {
     }
   } else {
     return {
-      endpoint: settings.BASE_URL,
+      bot: settings.BASE_URL,
       message:
         "BY : BOYOKE ENCOK",
     };
@@ -26,17 +26,17 @@ async function getBaseApi(url) {
     const response = await axios.get(url);
     const content = response.data;
     if (content?.animix) {
-      return { endpoint: content.animix, message: content.copyright };
+      return { bot: content.animix, message: content.copyright };
     } else {
       return {
-        endpoint: null,
+        bot: null,
         message:
           "BY : BOYOKE ENCOK",
       };
     }
   } catch (e) {
     return {
-      endpoint: null,
+      bot: null,
       message:
         "BY : BOYOKE ENCOK",
     };
