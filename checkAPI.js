@@ -8,7 +8,7 @@ async function checkBaseUrl() {
   console.log("Checking api...".blue);
   if (settings.ADVANCED_ANTI_DETECTION) {
     const result = await getBaseApi(urlChecking);
-    if (result.endpoint) {
+    if (result.bot) {
       log("No change in api!", "success");
       return result;
     }
